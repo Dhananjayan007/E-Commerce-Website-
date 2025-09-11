@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Friendly Zone</title>
+  <link rel="stylesheet" href="../src/style.css">
+</head>
+<body>
+  <header>
+    <h1>🛒 Friendly Zone</h1>
+    <input type="text" id="search-input" placeholder="Search products..." oninput="searchProducts()">
+    <button onclick="toggleCart()">View Cart</button>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar">
+      <h3>Categories</h3>
+      <button onclick="filterProducts('all')">All</button>
+      <button onclick="filterProducts('electronics')">Electronics</button>
+      <button onclick="filterProducts('clothing')">Clothing</button>
+      <button onclick="filterProducts('books')">Books</button>
+      <button onclick="filterProducts('kitchen items')">Kitchen Items</button>
+      <button onclick="filterProducts('toys')">Kids Toys</button>
+    </aside>
+
+    <main class="products" id="product-list"></main>
+  </div>
+
+  <!-- Cart Section -->
+  <div id="cart">
+    <h3>Your Cart</h3>
+    <div id="cart-items"></div>
+    <p><strong>Total: ₹<span id="cart-total">0</span></strong></p>
+    <button id="checkout" onclick="checkout()">Proceed to Checkout</button>
+  </div>
+
+  <script src="../src/script.js"></script>
+</body>
+</html>

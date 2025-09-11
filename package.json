@@ -1,0 +1,14 @@
+{
+  "name": "friendly-zone",
+  "version": "1.0.0",
+  "description": "A friendly zone project",
+  "main": "src/script.js",
+  "scripts": {
+    "start": "live-server public"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
